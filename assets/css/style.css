@@ -1,0 +1,43 @@
+body{
+	text-align:center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    background-color: #000000;
+    margin-bottom:60px;	
+	font-family: 'Comfortaa', cursive;
+
+}
+
+.jumbotron{
+	opacity:.8;
+}
+
+.btn{
+	margin:2px 2px;
+}
+
+#timer {
+	font-size: 120px;
+	color:#5EDE2E;	
+  	text-align: center;
+  	background: black;
+}
+
+#questions{
+	font-size:30px;
+	color:#ffffff;
+	margin-bottom:10px;
+}
+
+#scores{
+	font-size:30px;
+	color:#ffffff;
+}
+
+#highscore{
+	font-size:20px;
+	color: #E80606;	
+}
+
