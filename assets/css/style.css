@@ -34,10 +34,16 @@ body{
 #scores{
 	font-size:30px;
 	color:#ffffff;
+	text-align:center;
 }
 
 #highscore{
 	font-size:20px;
 	color: #E80606;	
+	text-align:center;
+}
+
+#possiblescore{
+	text-align:center;
 }
 

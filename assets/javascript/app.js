@@ -184,7 +184,7 @@ function timeCount(){
 		var message = $("<div>")
 		message.addClass("jumbotron bg-info");
 		message.attr("id", "myMessage")
-		message.text("Time Ran Out! the correct answer was " + database[index].answer)
+		message.text("Time Ran Out! The correct answer was " + database[index].answer)
 		var nextButton = $("<div>");
 		nextButton.addClass("btn btn-danger");
 		nextButton.attr("id","nextButton")
