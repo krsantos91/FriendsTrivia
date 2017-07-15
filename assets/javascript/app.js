@@ -139,7 +139,7 @@ function displayNextQuestion(){
 	scoreIntervalId = setInterval(scoreCount,66);
 	$(".choices").empty();
 	// display the timer, question, and choices		
-	$("#timer").text(timeConverter(timer));
+	$("#timer").text(timer);
 	$("#questions").text(database[index].question);
 	for (i =0; i<4;i++){
 		var buttontext = database[index].choices[i];
@@ -193,8 +193,8 @@ function timeCount(){
 		$("#messagebox").append(nextButton);
     	return;
     }
-    var currentTime = timeConverter(timer);
-    $("#timer").text(currentTime);	
+
+    $("#timer").text(timer);	
 }
 function scoreCount(){
 	maxscore --;
@@ -205,17 +205,17 @@ function scoreCount(){
 }
 
 //  Takes the current time in seconds and convert it to minutes and seconds (mm:ss).
-function timeConverter(t) {
-  var minutes = Math.floor(t / 60);
-  var seconds = t - (minutes * 60);
-  if (seconds < 10) {
-    seconds = "0" + seconds;
-  }
-  if (minutes === 0) {
-    minutes = "00";
-  }
-  else if (minutes < 10) {
-    minutes = "0" + minutes;
-  }
-  return minutes + ":" + seconds;
-}
+// function timeConverter(t) {
+//   var minutes = Math.floor(t / 60);
+//   var seconds = t - (minutes * 60);
+//   if (seconds < 10) {
+//     seconds = "0" + seconds;
+//   }
+//   if (minutes === 0) {
+//     minutes = "00";
+//   }
+//   else if (minutes < 10) {
+//     minutes = "0" + minutes;
+//   }
+//   return minutes + ":" + seconds;
+// }
