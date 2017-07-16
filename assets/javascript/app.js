@@ -1,35 +1,35 @@
 var database = [
-	{question:"How many Babies did Phoebe carry for her brother?", choices:["1","2","4","3"], answer:"3"},
-	{question:"Who does Ross Marry in Las Vegas?", choices:["Rachel","Sarah","Carol","Denise"], answer:"Rachel"},
-	{question:"How did Chandler meet Ross?", choices:["As children","At the coffee shop, 'Central Perk'","During college","At a toga party"], answer:"During college"},
-	{question:"What instrument does Phoebe play?", choices:["Guitar","Flute","Ukulele","Kazoo"], answer:"Guitar"},
-	{question:"Where did Chandler and Monica first get together?", choices:["Las Vegas","Central Perk","Chandler's apartment","London"], answer:"London"},
-	{question:"What is Ross's son's name?", choices:["David","Alex","Joey Jr.","Ben"], answer:"Ben"},
-	{question:"How many babies are born on the show?", choices:["4","8","7","5"], answer:"7"},	
-	{question:"What is Monica's job?", choices:["Chef","Actress","Accountant","Crazy Lady"], answer:"Chef"},
-	{question:"Why does Carol(Ross's wife) leave Ross?", choices:["He cheated","Money issues","She is lesbian","Bad sex"], answer:"She is lesbian"},	
-	{question:"What is Rachel's surname?", choices:["David","Geller","Aniston","Green"], answer:"Green"},
-	{question:"Where is Chandler forced to work after falling asleep during a meeting?", choices: ["Tulsa", "Reno", "Antlantic City", "San Fransisco"], answer:"Tulsa"},
-	{question:"What is the name of Chandler's roommate after Joey moves Out?", choices: ["Paul", "Ross", "David", "Eddie"], answer:"Eddie"},
-	{question:"What basketball team do Ross, Joey and Chandler support?", choices: ["New York Knicks", "Chicago Bulls", "New York Bucks", "Brooklyn Nets"], answer:"New York Knicks"},
-	{question:"The 'Geller Cup' is a prize in which sport?", choices: ["Hockey", "Basketball", "Football", "Tennis"], answer:"Football"},	
-	{question:"Where is Rachel leaving for in 'The Last One'?", choices: ["Los Angeles", "Paris", "Italy", "London"], answer:"Paris"},
-	{question:"Whose catchphrase is 'Oh my God'?", choices: ["Janet", "Alice", "Janice", "Jennie"], answer:"Janice"},
-	{question:"Where does Rachel work before her job in fashion?", choices: ["Law firm", "Coffee shop", "Restaurant", "She was unemployed"], answer:"Coffee shop"},
-	{question:"Which friend lived on the street when they were younger", choices: ["Joey", "Chandler", "Phoebe", "Monica"], answer:"Phoebe"},		
-	{question:"Where does Chandler's father live?", choices: ["Los Angeles", "Las Vegas", "Chicago", "New York"], answer:"Las Vegas"},
-	{question:"What does Joey wear to Chandler and Monica's wedding?", choices: ["A suit", "A priest outfit", "A robe", "An army uniform"], answer:"An army uniform"},	
-	{question:"Where do Phoebe and Mike get married?", choices: ["Central Perk", "Jamaica", "On the street", "Church wedding"], answer:"On the street"},
-	{question:"What is the name of Bruce Willis' character?", choices: ["David", "Paul", "Allen", "Bruce"], answer:"Paul"},	
-	{question:"What is Chandler's mother's job?", choices: ["Divorce lawyer", "Erotic novelist", "Special needs teacher", "Bank teller"], answer:"Erotic novelist"},
-	{question:"Who is the youngest friend?", choices: ["Ross", "Rachel", "Joey", "Phoebe"], answer:"Rachel"},	
-	{question:"How many sisters does Joey have?", choices: ["7", "0", "3", "6"], answer:"7"},
-	{question:"What is Rachel's father's job?", choices: ["Erotic novelist", "Lawyer", "Banker", "Doctor"], answer:"Doctor"},	
-	{question:"What park of New York is Rachel originally from?", choices: ["Brooklyn", "Long Island", "Manhattan", "Ithaca"], answer:"Long Island"},
-	{question:"Where does Mike originally attempt to propose to Phoebe?", choices: ["London", "Paris", "Jamaica", "Barbados"], answer:"Barbados"},	
-	{question:"Who plays 'Will', an old friend of Monica and Ross' from high school who hates Rachel?", choices: ["Tom Cruise", "Brad Pitt", "Bruce Willis", "George Clooney"], answer:"Brad Pitt"},
-	{question:"How many siblings does Chandler have?", choices: ["0", "1", "2", "3"], answer:"0"},	
-	{question:"What was the name of Monica's boyfriend who tried to become the 'Ultimate Fighting Champion'?", choices: ["Jared", "Ollie", "John", "Pete"], answer:"Pete"}
+	{question:"How many Babies did Phoebe carry for her brother?", choices:["1","2","4","3"], answer:"3", image:"assets/images/q1.gif"},
+	{question:"Who does Ross Marry in Las Vegas?", choices:["Rachel","Sarah","Carol","Denise"], answer:"Rachel", image:"assets/images/q2.gif"},
+	{question:"How did Chandler meet Ross?", choices:["As children","At the coffee shop, 'Central Perk'","During college","At a toga party"], answer:"During college", image: "assets/images/q3.gif"},
+	{question:"What instrument does Phoebe play?", choices:["Guitar","Flute","Ukulele","Kazoo"], answer:"Guitar", image:"assets/images/q4.gif"},
+	{question:"Where did Chandler and Monica first get together?", choices:["Las Vegas","Central Perk","Chandler's apartment","London"], answer:"London", image:"assets/images/q5.gif"},
+	{question:"What is Ross's son's name?", choices:["David","Alex","Joey Jr.","Ben"], answer:"Ben", image:"assets/images/q6.gif"},
+	{question:"How many babies are born on the show?", choices:["4","8","7","5"], answer:"7", image:"assets/images/q7.gif"},	
+	{question:"What is Monica's job?", choices:["Chef","Actress","Accountant","Crazy Lady"], answer:"Chef", image:"assets/images/q8.gif"},
+	{question:"Why does Carol(Ross's wife) leave Ross?", choices:["He cheated","Money issues","She is lesbian","Bad sex"], answer:"She is lesbian", image:"assets/images/q9.gif"},	
+	{question:"What is Rachel's surname?", choices:["David","Geller","Aniston","Green"], answer:"Green", image:"assets/images/q10.gif"},
+	{question:"Where is Chandler forced to work after falling asleep during a meeting?", choices: ["Tulsa", "Reno", "Antlantic City", "San Fransisco"], answer:"Tulsa", image:"assets/images/q11.gif"},
+	{question:"What is the name of Chandler's roommate after Joey moves Out?", choices: ["Paul", "Ross", "David", "Eddie"], answer:"Eddie", image:"assets/images/q12.gif"},
+	{question:"What basketball team do Ross, Joey and Chandler support?", choices: ["New York Knicks", "Chicago Bulls", "New York Bucks", "Brooklyn Nets"], answer:"New York Knicks", image:"assets/images/q13.gif"},
+	{question:"The 'Geller Cup' is a prize in which sport?", choices: ["Hockey", "Basketball", "Football", "Tennis"], answer:"Football", image:"assets/images/q14.gif"},	
+	{question:"Where is Rachel leaving for in 'The Last One'?", choices: ["Los Angeles", "Paris", "Italy", "London"], answer:"Paris", image:"assets/images/q15.gif"},
+	{question:"Whose catchphrase is 'Oh my God'?", choices: ["Janet", "Alice", "Janice", "Jennie"], answer:"Janice", image:"assets/images/q16.gif"},
+	{question:"Where does Rachel work before her job in fashion?", choices: ["Law firm", "Coffee shop", "Restaurant", "She was unemployed"], answer:"Coffee shop", image:"assets/images/q17.gif"},
+	{question:"Which friend lived on the street when they were younger", choices: ["Joey", "Chandler", "Phoebe", "Monica"], answer:"Phoebe", image:"assets/images/q18.gif"},		
+	{question:"Where does Chandler's father live?", choices: ["Los Angeles", "Las Vegas", "Chicago", "New York"], answer:"Las Vegas", image:"assets/images/q19.jpg"},
+	{question:"What does Joey wear to Chandler and Monica's wedding?", choices: ["A suit", "A priest outfit", "A robe", "An army uniform"], answer:"An army uniform", image:"assets/images/q20.gif"},	
+	{question:"Where do Phoebe and Mike get married?", choices: ["Central Perk", "Jamaica", "On the street", "Church wedding"], answer:"On the street", image:"assets/images/q21.gif"},
+	{question:"What is the name of Bruce Willis' character?", choices: ["David", "Paul", "Allen", "Bruce"], answer:"Paul", image:"assets/images/q22.gif"},	
+	{question:"What is Chandler's mother's job?", choices: ["Divorce lawyer", "Erotic novelist", "Special needs teacher", "Bank teller"], answer:"Erotic novelist", image:"assets/images/q23.jpg"},
+	{question:"Who is the youngest friend?", choices: ["Ross", "Rachel", "Joey", "Phoebe"], answer:"Rachel", image:"assets/images/q24.gif"},	
+	{question:"How many sisters does Joey have?", choices: ["7", "0", "3", "6"], answer:"7", image:"assets/images/q25.gif"},
+	{question:"What is Rachel's father's job?", choices: ["Erotic novelist", "Lawyer", "Banker", "Doctor"], answer:"Doctor", image:"assets/images/q26.jpg"},	
+	{question:"What park of New York is Rachel originally from?", choices: ["Brooklyn", "Long Island", "Manhattan", "Ithaca"], answer:"Long Island", image:"assets/images/q27.gif"},
+	{question:"Where does Mike originally attempt to propose to Phoebe?", choices: ["London", "Paris", "Jamaica", "Barbados"], answer:"Barbados", image:"assets/images/q28.gif"},	
+	{question:"Who plays 'Will', an old friend of Monica and Ross' from high school who hates Rachel?", choices: ["Tom Cruise", "Brad Pitt", "Bruce Willis", "George Clooney"], answer:"Brad Pitt", image:"assets/images/q29.gif"},
+	{question:"How many siblings does Chandler have?", choices: ["0", "1", "2", "3"], answer:"0", image:"assets/images/q30.gif"},	
+	{question:"What was the name of Monica's boyfriend who tried to become the 'Ultimate Fighting Champion'?", choices: ["Jared", "Ollie", "John", "Pete"], answer:"Pete", image:"assets/images/q31.gif"}
 ];
 var questionNumber = 1;
 
@@ -92,6 +92,9 @@ $(document).on("click",".choicebutton", function(){
 	else{
 		message.text("INCORRECT! The answer was " + database[index].answer);
 	}
+	$(message).append("<br>");
+	$(message).append("<img src='"+database[index].image+"' style='width:300px;height:300px'>");
+	$(message).append("<br>");		
 	$("#messagebox").append(message);
 	$("#messagebox").append(nextButton);
 	clearInterval(intervalId);
@@ -166,7 +169,7 @@ function endGame(){
 	nextButton.addClass("btn btn-danger");
 	nextButton.attr("id","reset")
 	nextButton.text("Click to try again");
-	message.text("Your Final Score was " + score + " with " + correct + " answers of out 10.")
+	message.text("Your Final Score was " + score + " with " + correct + " answers out of 10.")
 	$("#messagebox").append(message).append(nextButton);
 }
 
@@ -184,11 +187,14 @@ function timeCount(){
 		var message = $("<div>")
 		message.addClass("jumbotron bg-info");
 		message.attr("id", "myMessage")
-		message.text("Time Ran Out! The correct answer was " + database[index].answer)
+		message.text("Time Ran Out! The correct answer was " + database[index].answer);
 		var nextButton = $("<div>");
 		nextButton.addClass("btn btn-danger");
 		nextButton.attr("id","nextButton")
 		nextButton.text("Next");
+		$(message).append("<br>");
+		$(message).append("<img src='"+database[index].image+"' style='width:300px;height:300px'>");
+		$(message).append("<br>");		
 		$("#messagebox").append(message);
 		$("#messagebox").append(nextButton);
     	return;
@@ -204,18 +210,3 @@ function scoreCount(){
 	$("#possiblescore").text(maxscore);
 }
 
-//  Takes the current time in seconds and convert it to minutes and seconds (mm:ss).
-// function timeConverter(t) {
-//   var minutes = Math.floor(t / 60);
-//   var seconds = t - (minutes * 60);
-//   if (seconds < 10) {
-//     seconds = "0" + seconds;
-//   }
-//   if (minutes === 0) {
-//     minutes = "00";
-//   }
-//   else if (minutes < 10) {
-//     minutes = "0" + minutes;
-//   }
-//   return minutes + ":" + seconds;
-// }
