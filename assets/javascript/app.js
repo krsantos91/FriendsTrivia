@@ -34,6 +34,7 @@ var database = [
 var questionNumber = 1;
 
 var autoquestion;
+var gamereset;
 
 // data base variables
 var usedIndices = [];
@@ -125,6 +126,7 @@ $(document).on("click","#nextButton", function(){
 
 // When the reset button is clicked, reset index,score and display question
 $(document).on("click", "#reset",function(){
+	clearTimeout(gamereset);
 	$("#messagebox").empty();
 	usedIndices = [];
 	do{
@@ -141,6 +143,7 @@ $(document).on("click", "#reset",function(){
 
 // Displays the next question and choices
 function displayNextQuestion(){
+	if (questionNumber == 1) clearInterval(gamereset);
 	$("#highscore").text("Highscore: " + highscore);
 	$("#myscore").text("Score: " + score);
 	if (questionNumber > 10){
@@ -182,6 +185,18 @@ function endGame(){
 	nextButton.text("Click to try again");
 	message.text("Your Final Score was " + score + " with " + correct + " answers out of 10.")
 	$("#messagebox").append(message).append(nextButton);
+	gamereset = setTimeout(function(){
+		$("#messagebox").empty();
+		usedIndices = [];
+		do{
+			index = Math.floor(Math.random()*31);
+		}while(usedIndices.indexOf(index) != -1)
+		usedIndices.push(index);	
+		score = 0;
+		correct = 0;
+		questionNumber = 1;
+		displayNextQuestion();		
+	},1000*10);
 }
 
 // Timer countdown function
@@ -216,7 +231,7 @@ function timeCount(){
 		usedIndices.push(index);
 		questionNumber++;
 		displayNextQuestion();
-		},1000*5);
+		},1000*7);
 		return;
     }
 
