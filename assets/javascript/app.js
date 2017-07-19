@@ -33,6 +33,8 @@ var database = [
 ];
 var questionNumber = 1;
 
+var autoquestion;
+
 // data base variables
 var usedIndices = [];
 var index;
@@ -98,11 +100,20 @@ $(document).on("click",".choicebutton", function(){
 	$("#messagebox").append(message);
 	$("#messagebox").append(nextButton);
 	clearInterval(intervalId);
-	return;
+	autoquestion = setTimeout(function(){
+		$("#messagebox").empty();
+		do{
+			index = Math.floor(Math.random()*31);
+		}while(usedIndices.indexOf(index) != -1)
+		usedIndices.push(index);
+		questionNumber++;
+		displayNextQuestion();
+	},1000*5);
 });
 
 // When the next button is clicked, increase the  index and display next question
 $(document).on("click","#nextButton", function(){
+	clearTimeout(autoquestion);
 	$("#messagebox").empty();
 	do{
 		index = Math.floor(Math.random()*31);
@@ -197,7 +208,16 @@ function timeCount(){
 		$(message).append("<br>");		
 		$("#messagebox").append(message);
 		$("#messagebox").append(nextButton);
-    	return;
+    	autoquestion = setTimeout(function(){
+		$("#messagebox").empty();
+		do{
+			index = Math.floor(Math.random()*31);
+		}while(usedIndices.indexOf(index) != -1)
+		usedIndices.push(index);
+		questionNumber++;
+		displayNextQuestion();
+		},1000*5);
+		return;
     }
 
     $("#timer").text(timer);	
