@@ -7,7 +7,7 @@ A small trivia game app created to showcase use of jQuery, javascript and timed 
 ![Demo Image 1](https://user-images.githubusercontent.com/27389960/31589915-c823de1e-b1bd-11e7-849d-21a2cd32e37e.png)
 
 <h3>Technologies Leveraged</h3>
--Jquery
+-Jquery</br>
 -Javascript
 
 <h3>Description</h3>
